@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A13D8082612536800B8B560 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A13D8072612536800B8B560 /* main.cpp */; };
+		5A13D8082612536800B8B560 /* dyncast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A13D8072612536800B8B560 /* dyncast.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		5A13D8042612536800B8B560 /* CF.Dynamic_cast_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CF.Dynamic_cast_test; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A13D8072612536800B8B560 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5A13D8072612536800B8B560 /* dyncast.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dyncast.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		5A13D8062612536800B8B560 /* CF.Dynamic_cast_test */ = {
 			isa = PBXGroup;
 			children = (
-				5A13D8072612536800B8B560 /* main.cpp */,
+				5A13D8072612536800B8B560 /* dyncast.cpp */,
 			);
 			path = CF.Dynamic_cast_test;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A13D8082612536800B8B560 /* main.cpp in Sources */,
+				5A13D8082612536800B8B560 /* dyncast.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,9 +239,11 @@
 		5A13D80C2612536800B8B560 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++2a";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu2x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -249,9 +251,11 @@
 		5A13D80D2612536800B8B560 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++2a";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu2x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
